@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A tag form do HTML, atributos e elementos">
+    <title>Aula 02</title>
+    <style>
+        body {
+            font-family: Calibri;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Exercício da Aula 02</h1>
+    </header>
+
+    <main id="corpoprincipaldapagina">
+
+        <form action="segundaPagina.html" method="post">
+
+            <section id="dadosprincipais">
+                <label for="idnome">
+                    Digite seu nome:
+                    <input type="text" name="nome" id="idnome" required>
+                </label>
+                <br>
+                <label for="idsenha">
+                    Digite sua senha:
+                    <input type="password" name="senha" id="idsenha" required>
+                </label>
+                <br>
+                <label for="idemail">
+                    Digite seu e-mail:
+                    <input type="text" name="email" id="idemail" required>
+                </label>
+                <br><br>
+                <fieldset>
+                    <legend> Selecione seu sexo: </legend>
+                    <input type="radio" name="sexo" id="idmasc" checked> <label for="idmasc">Masculino</label> <br>
+                    <input type="radio" name="sexo" id="idfem"> <label for="idfem">Feminino</label> <br>
+                    <input type="radio" name="sexo" id="idoutro"> <label for="idoutro">Outro</label> <br>
+                </fieldset>
+            </section>
+
+            <br><br>
+
+            <section id="dadosauxiliares">
+                <fieldset>
+                    <legend> Preferências de lazer: </legend>
+                    <input type="checkbox" name="prefers" id="idcin"> <label for="idcin">Cinema</label> <br>
+                    <input type="checkbox" name="prefers" id="idteat"> <label for="idteat">Teatro</label><br>
+                    <input type="checkbox" name="prefers" id="idesp"> <label for="idesp">Esportes</label><br>
+                    <input type="checkbox" name="prefers" id="idcam"> <label for="idcam">Caminhada</label><br>
+                </fieldset>
+
+                <h2>Selecione seu bairro: </h2>
+                <select name="bairro" id="idbairro" required>
+                    <option value="" disabled selected> --- Selecione um bairro --- </option>
+                    <option value="tat">Tatuapé</option>
+                    <option value="smp">São Miguel</option>
+                    <option value="af">Anália Franco</option>
+                    <option value="mooca">Mooca</option>
+                    <option value="mooca">Penha</option>
+                </select>
+
+                <br><br>
+
+                <h2>Digite seus comentários:</h2>
+                <textarea name="coment" id="idcomen" cols="45" rows="10"
+                    placeholder="Gostaríamos de saber sua opinião..."></textarea>
+            </section>
+
+            <br><br>
+
+            <input type="submit" value="Enviar">
+        </form>
+
+        <br><br><hr><br>
+    </main>
+
+    <h2>Sugestões de links para aprofundar e ver exemplos da tag form</h2>
+    <a href="https://www.w3schools.com/html/html_forms_attributes.asp">Atributos</a> que podemos utilizar na tag form
+    (action, method...) <br>
+    <a href="https://www.w3schools.com/html/html_form_elements.asp">Elementos</a> que podemos colocar dentro da tag form
+    (input, textarea...)
+
+    <br><br>
+
+    <figure>
+        <img src="joinha.png">
+        <figcaption>Obrigado!</figcaption>
+    </figure>
+
+    <br><br><br><br><br><br>
+
+    <footer>
+        © Aula 02, Prof. Ledón, 2026
+    </footer>
+
+    <br><br><br><br><br><br>
+</body>
+
+</html>
